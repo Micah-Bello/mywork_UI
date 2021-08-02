@@ -422,7 +422,7 @@
                     <div class="col-7">
                       <div class="input-icons">
                         <i class="fas fa-dollar-sign fa-lg icon text-secondary"></i>
-                        <input class="form-control text-end input-field" type="text" value="35.00" />
+                        <input class="form-control text-end input-field" id="hourlyRateInput" oninput="updateFields(this.value, this.id)" type="number" value="35.00" />
                       </div>
                     </div>
                     <div class="col-5 p-2">
@@ -443,7 +443,7 @@
                     <div class="col-7">
                       <div class="input-icons">
                         <i class="fas fa-dollar-sign fa-lg icon text-secondary"></i>
-                        <label class="text-end input-field mt-2 pe-3 text-secondary">-7.00</label>
+                        <label class="text-end input-field mt-2 pe-3 text-secondary" id="serviceFeeLabel">-7.00</label>
                       </div>
                     </div>
                     <div class="col-5 p-2">
@@ -465,7 +465,7 @@
                     <div class="col-7">
                       <div class="input-icons">
                         <i class="fas fa-dollar-sign fa-lg icon text-secondary"></i>
-                        <input class="form-control text-end input-field" type="text" value="28.00" />
+                        <input class="form-control text-end input-field" type="number" value="28.00" id="actualRateInput" oninput="updateFields(this.value, this.id)"/>
                       </div>
                     </div>
                     <div class="col-5 p-2">
